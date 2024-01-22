@@ -1,19 +1,36 @@
 import { car_backend } from "../../declarations/car_backend";
 
-document.querySelector("form").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const button = e.target.querySelector("button");
 
-  const name = document.getElementById("name").value.toString();
 
-  button.setAttribute("disabled", true);
+import { automobil_backend } from "../../declarations/automobil_backend";
+async function submitCarAd() {
+    // Collect form data
+    var make = document.getElementById("make").value;
+    var model = document.getElementById("model").value;
+    var year = document.getElementById("year").value;
 
-  // Interact with foo actor, calling the greet method
-  const greeting = await car_backend.greet(name);
+    // Call the Internet Computer backend using fetch
+    const response = await fetch("https://your-canister-id.ic0.app/api/submitCarAd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        make: make,
+        model: model,
+        year: year,
+      }),
+    });
 
-  button.removeAttribute("disabled");
+    if (response.ok) {
+      // Submission successful, handle the response as needed
+      const data = await response.json();
+      console.log("Car Advertisement Submitted:", data);
+    } else {
+      // Submission failed, handle the error
+      console.error("Failed to submit car advertisement");
+    }
+  }
 
-  document.getElementById("greeting").innerText = greeting;
+  
 
-  return false;
-});

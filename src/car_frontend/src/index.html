@@ -3,22 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>car</title>
+    <title>Car</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link type="text/css" rel="stylesheet" href="src/car_frontend/assets/main.css" />
   </head>
   <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+    
+      <header>
+        <img id="show" src="/src/car_frontend/src/icon.png" alt="">
+        <h2 class="logo">Automobil Display</h2>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="src/car_frontend/src/file.html">Add Car</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <button class="btnlogin">Login</button>
+        </nav>
+        </header> 
+      <br>
+      <hr>
+      <br>
+      <br>
+      <div id="home">
+      <div class="cars">
+        <div class="row1">
+           <div class="car">
+            <img src="/src/car_frontend/src/bmw1.jpeg" alt=""  onclick="
+            alert('This is a bmw car rank 1 of the year with 10,000+ sales.');
+          ">
+          <br>
+            <p>Ocuses on upgrading vehicle-cellphone intelligent interconnection entertainment function. Upgrade OEM screen to Android multimedia system, support wireless carplay auto mirror.</p>
+            <p class="price">$2.5M</p>
+            <button class="B js-B-1" onclick="
+              turning('.js-B-1');
+            ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mazda1.jpeg" alt="" onclick="
+            alert('This is a mazda car rank 1 of the year with 11,000+ sales.');
+          ">
+          <br>
+            <p>Hot price & Good condition used Mazda car, No1 Exporter SBT. We can give you Satisfaction. Most popular Mazda cars : Demio, Verisa, Axela Sport, Bongo Van, Axela, CX5, MPV, Premacy.</p>
+            <p class="price">$2M</p>
+            <button class="B js-B-2"  onclick="
+            turning('.js-B-2');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mercides1.jpeg" alt="" onclick="
+            alert('This is a mercides car rank 1 of the year with 8,000+ sales.');
+          ">
+          <br>
+            <p>The only company offering vehicles with 3 months moneyback guarantee on gearbox and engine.Choose mercides choose greatness.</p>
+            <p class="price">$5M</p>
+            <button class="B js-B-3"  onclick="
+            turning('.js-B-3');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/toyota1.jpeg" alt="" onclick="
+              alert('This is a toyota car rank 2 of the year with 9,700+ sales.');
+            ">
+            <br>
+            <p>Toyota Cars List Of Models - Top Results, Find More at Searchmixer. Find The Best Results Now. Find Toyota Cars List Of Models. Search at Searchmixer and Find Answers. Useful & Relevant.</p>
+            <p class="price" >$3M</p>
+            <button class="B js-B-4"  onclick="
+            turning('.js-B-4');
+          ">Buy</button>
+        </div>  
+      </div>
+        <div class="row2"> 
+          <div class="car">
+            <img src="/src/car_frontend/src/bmw2.jpeg" alt="" onclick="
+              alert('This is a bmw car rank 2 of the year with 9,000+ sales.');
+            ">
+            <br>
+            <p>BMW is referred to as a beamer because it is slang that was developed back when BMW’s only made motorcycles.</p>
+            <p class="price">$3.5M</p>
+            <button class="B js-B-5"  onclick="
+            turning('.js-B-5');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mazda2.jpeg" alt=""  onclick="
+            alert('This is a mazda car rank 2 of the year with 6,000+ sales.');
+          ">
+          <br>
+            <p>Mazda CX-5 has been making waves in the SUV market since its debut back in 2012.</p>
+            <p class="price">$4M</p>
+            <button class="B js-B-6"  onclick="
+            turning('.js-B-6');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mercides2.jpeg" alt="" onclick="
+            alert('This is a mercides car rank 2 of the year with 8,000+ sales.');
+          ">
+          <br>
+            <p>Good deals · mercedes-benz - 220 se/c - 1963. MERCEDES S-CLASS 220 SE. See the listing · mercedes-benz - g-klasse 320 lwb - 2000. </p>
+            <p class="price">$2.5M</p>
+            <button class="B js-B-7"  onclick="
+            turning('.js-B-7');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/toyota2.jpeg" alt="" onclick="
+              alert('This is a toyota car rank 2 of the year with 6,900+ sales.');
+            ">
+            <br>
+            <p>Check out our numerous inventory of Toyota used cars including Vitz, Allion, MarkX etc.</p>
+            <p class="price">$4.5M</p>
+            <button class="B js-B-8" onclick="
+            turning('.js-B-8');
+          " >Buy</button>
+        </div>
+      </div>
+        <div class="row3">
+          <div class="car">
+            <img src="/src/car_frontend/src/bmw3.jpeg" alt="" onclick="
+            alert('This is a bmw car rank 3 of the year with 7,000+ sales.');
+          ">
+          <br>
+            <p>BMW SUVs are some of the most luxurious and sought-after vehicles on the market. With a variety of models, features, and price points.</p>
+            <p class="price">$2M</p>
+            <button class="B js-B-9"  onclick="
+            turning('.js-B-9');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mazda3.jpeg" alt="" onclick="
+            alert('This is a mazda car rank 3 of the year with 10,000+ sales.');
+          ">
+          <br>
+            <p>When it comes to choosing a new car, one of the most important factors to consider is fuel efficiency.Mazda is fuel efficient</p>
+            <p class="price">$3M</p>
+            <button class="B js-B-10"  onclick="
+            turning('.js-B-10');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/mercides3.jpeg" alt="" onclick="
+            alert('This is a mercides car rank 3 of the year with 9,500+ sales.');
+          ">
+          <br>
+            <p>A certain future classic in very clean condition compared to market, everything in the car works. car is in good condition for weekend use or storage.</p>
+            <p class="price">$4.5M</p>
+            <button class="B js-B-11"  onclick="
+            turning('.js-B-11');
+          ">Buy</button>
+          </div>
+          <div class="car">
+            <img src="/src/car_frontend/src/toyota3.jpeg" alt="" onclick="
+              alert('This is a toyota car rank 2 of the year with 11,000+ sales.');
+            ">
+            <br>
+            <p>Enjoy a personalized car import service directly from Japan, UK, Singapore and Thailand.</p>
+            <p class="price">$5M</p>
+            <button class="B js-B-12"  onclick="
+            turning('.js-B-12');
+           
+          ">Buy</button>
+        </div>
+      </div>
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <br>
+          <p class="cont">Visit our showroom or contact us for more information.</p>
+          <br>
+          <address>
+            <p  class="cont"Car></pclass> Showroom</p>
+            <p class="cont">123 Main Street</p>
+            <p class="cont">City, Country</p>
+            <br>
+          </address>
+          <p class="cont">Email: info@carshowroom.com</p>
+          <p class="cont">Phone: +123 456 7890</p>
+        </div>
+        <div class="terms">
+          <a href="#term and cond">Terms and Conditions|Privacy</a>
+        </div>
+      </section>
+
+      <div class="about">
+        <center><h1>Your choice car speed,power,ease of use and safety</h1></center>
+      </div>
+      <script>
+        function turning(turn){
+  
+  let bElement = document.querySelector(turn);
+ 
+  
+  if(bElement.classList.contains('is-toggle')){
+    if(bElement.innerText === 'Buy'){
+      bElement.innerHTML = 'Added to PCart';
+      bElement.classList.add('is-Purchased');
+    }
+    else{
+      bElement.innerHTML = 'Buy';
+      bElement.classList.remove('is-Purchased');
+  }
+  bElement.classList.remove('is-toggle');
+}
+  else{
+    if(bElement.innerText === 'Buy'){
+      bElement.innerHTML = 'Added to PCart';
+      bElement.classList.add('is-Purchased');
+    }
+    else{
+      bElement.innerHTML = 'Buy';
+      bElement.classList.remove('is-Purchased');
+  }
+  bElement.classList.add('is-toggle');
+  
+  }
+}
+function buy(turn){
+  
+  let buttonElement = document.querySelector(turn);
+    if(buttonElement.innerText === 'Buy'){
+      buttonElement.innerHTML = 'Added to PCart';
+      buttonElement.classList.add('is-Purchased');
+    }
+    else{
+      buttonElement.innerHTML = 'Buy';
+      buttonElement.classList.remove('is-Purchased');
+  }
+}
+      </script>
+      <script src="src/car_frontend/src/index.js"></script>
+
+    </div>
+
+  </div>
+     
+
+
+  
   </body>
+  
 </html>
