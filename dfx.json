@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "car_backend": {
+      "main": "src/car_backend/main.mo",
+      "type": "motoko"
+    },
+    "car_frontend": {
+      "dependencies": [
+        "car_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/car_frontend/src/index.html"
+      },
+      "source": [
+        "src/car_frontend/assets",
+        "dist/car_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
